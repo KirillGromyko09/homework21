@@ -1,0 +1,5 @@
+.banner {
+  @include bg-image('./../../assets/images/jpg/employee.jpg');
+
+  height: 100vh;
+}

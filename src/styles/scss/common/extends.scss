@@ -1,0 +1,13 @@
+%default-transition {
+  transition: 0.3s;
+}
+
+%default-border-radius {
+  border-radius: $default-border-radius;
+}
+
+%bg-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

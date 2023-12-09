@@ -1,0 +1,45 @@
+
+body {
+  font-family: $main-font-family,sans-serif;
+  font-size: $font-md;
+  font-weight: $font-regular;
+  color: $main-font-color;
+}
+
+.container{
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.d-flex{
+  display: flex;
+}
+
+.justify-content-center{
+  justify-content: center;
+}
+
+.justify-content-between{
+  justify-content: space-between;
+}
+
+.align-items-center{
+  align-items: center;
+}
+
+a {
+  @extend %default-transition;
+   &.default:hover {
+     color: $accent-color;
+
+   }
+  &.blue {
+    color: $accent-color;
+    &:hover {
+      color: $additional2-font-color;
+    }
+  }
+  text-decoration: none;
+}
