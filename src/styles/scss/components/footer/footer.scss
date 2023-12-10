@@ -1,0 +1,31 @@
+.footer {
+  background-color: $main-font-color;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  &__text{
+    p {
+      color: #909090;
+      font-size: $font-xs;
+      width: 360px;
+    }
+  }
+
+  &__instagram-logo {
+    justify-content: end;
+
+  }
+  &__menu{
+    ul {
+      list-style: none;
+      gap: 40px;
+    }
+  }
+  &__contacts {
+    ul {
+      list-style: none;
+    }
+  }
+  a {
+    color: $additional-font-color;
+  }
+}

@@ -1,0 +1,73 @@
+.how {
+  @extend %term;
+  min-height: 800px;
+  background-color:#F4F4FA; ;
+  &__column{
+    gap: 40px;
+  }
+
+  &__title-text {
+    margin-bottom: 90px;
+    font-size: $font-xl;
+    font-weight: $font-medium;
+    color: $additional2-font-color;
+  }
+
+  &__column-get-ready {
+    width: 360px;
+    padding: 36px 65px 45px 30px;
+    background-color: $additional-font-color;
+    border-radius: $default-border-radius 100px $default-border-radius $default-border-radius ;
+
+  }
+  &__column-test {
+    width: 360px;
+    padding: 36px 65px 45px 30px;
+    background-color: $additional-font-color;
+    border-radius: $default-border-radius 100px $default-border-radius $default-border-radius ;
+
+  }
+  &__column-certificate {
+    width: 360px;
+    padding: 36px 65px 45px 30px;
+    background-color: $additional-font-color;
+    border-radius: $default-border-radius 100px $default-border-radius $default-border-radius ;
+
+  }
+
+  &__column-get-ready-img-vector{
+    padding: 16px 19px;
+    background-color: rgb(46 172 243 / 50%);
+    border-radius: $default-border-radius;
+    margin-bottom: 30px;
+  }
+
+  &__column-test-img-list{
+    padding: 16px 19px;
+    background-color:rgb(66 51 244 / 50%);
+    border-radius: $default-border-radius;
+    margin-bottom: 30px;
+  }
+  &__column-certificate-img-checkbox{
+    padding: 16px 19px;
+    background-color:rgba(60, 210, 220, 0.50);
+    border-radius: $default-border-radius;
+    margin-bottom: 30px;
+  }
+
+  a {
+    padding-right: 10px;
+    margin-bottom: 15px;
+  }
+  &__checkbox-test{
+    margin-top: 80px;
+    gap: 60px;
+    height: 30px;
+
+  }
+  h3 {
+    font-weight: $font-lg;
+    font-size: $font-lg;
+    color: $additional2-font-color;
+  }
+}

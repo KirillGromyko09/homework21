@@ -11,3 +11,32 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+%height100 {
+  height: 100%;
+}
+
+%terms {
+  form {
+    @extend .d-flex;
+    max-width: 500px;
+    gap: 10px;
+    label {
+      color: $additional-font-color;
+      font-weight: $font-light;
+      font-size: $font-sm;
+    }
+  }
+}
+%term {
+  form {
+    @extend .d-flex;
+    max-width: 500px;
+    gap: 10px;
+    label {
+      color: $additional2-font-color;
+      font-weight: $font-light;
+      font-size: $font-sm;
+    }
+  }
+}
+

@@ -1,0 +1,55 @@
+.test-your-iq {
+  min-height: 610px;
+
+  &__text {
+    gap: 40px;
+    max-width: 400px;
+    margin-right: 30px;
+  }
+
+  h2 {
+    padding-bottom: 30px;
+    font-size: $font-xl;
+    font-weight: $font-medium;
+    color: $additional2-font-color;
+  }
+
+  &__img {
+    margin-right: 15px;
+  }
+
+  &__clasification {
+    gap: 30px;
+
+
+    &-content :last-child{
+      border-bottom: none;
+    }
+  }
+
+  &__clasification-data {
+    gap:21px;
+    margin-bottom: 13px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid rgb(0 0 0 / 30%);
+  }
+
+  h3 {
+    font-weight: $font-lg;
+    color: $additional2-font-color;
+  }
+  &__clasification-upper {
+    color: $additional2-font-color;
+    font-size: $font-custom;
+    font-weight: $font-regular;
+  }
+  &__clasification-numbers {
+    font-weight: $font-medium;
+  }
+  &__clasification-text {
+    font-size: $font-custom;
+  }
+
+
+
+}

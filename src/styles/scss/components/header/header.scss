@@ -1,11 +1,15 @@
 .header{
   padding: 24px 0;
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: $header-height;
 
   &__menu {
     ul {
+      @extend %height100;
       gap:60px;
-      height: 100%;
       list-style: none;
     }
 

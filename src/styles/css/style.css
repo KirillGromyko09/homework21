@@ -91,10 +91,36 @@ select {
   background-size: cover;
 }
 
+.banner__content, .banner .container, .header__menu ul {
+  height: 100%;
+}
+
+.banner form {
+  max-width: 500px;
+  gap: 10px;
+}
+.banner form label {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.how form {
+  max-width: 500px;
+  gap: 10px;
+}
+.how form label {
+  color: #000;
+  font-weight: 300;
+  font-size: 14px;
+}
+
 body {
+  position: relative;
   font-family: poppins, sans-serif;
   font-size: 18px;
   font-weight: 400;
+  line-height: 1.2;
   color: rgba(0, 0, 0, 0.7);
 }
 
@@ -104,8 +130,12 @@ body {
   padding: 0 15px;
 }
 
-.d-flex {
+.d-flex, .banner form, .how form {
   display: flex;
+}
+
+.d-inline-block {
+  display: inline-block;
 }
 
 .justify-content-center {
@@ -116,11 +146,20 @@ body {
   justify-content: space-between;
 }
 
+.justify-content-end {
+  justify-content: end;
+}
+
 .align-items-center {
   align-items: center;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 a {
+  display: inline-block;
   text-decoration: none;
 }
 a.default:hover {
@@ -131,6 +170,31 @@ a.blue {
 }
 a.blue:hover {
   color: #000;
+}
+a.purple {
+  color: #4233F4;
+}
+a.purple:hover {
+  color: #000;
+}
+a.blue-sky {
+  color: #2CCBD6;
+}
+a.blue-sky:hover {
+  color: #000;
+}
+
+.btn {
+  width: 250px;
+  padding: 14px 61px;
+  color: #fff;
+  background-color: #2EACF3;
+  border: 2px solid #2EACF3;
+  border-radius: 5px 27px;
+}
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-color: #fff;
 }
 
 @font-face {
@@ -167,10 +231,14 @@ a.blue:hover {
 }
 .header {
   padding: 24px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 85px;
 }
 .header__menu ul {
   gap: 60px;
-  height: 100%;
   list-style: none;
 }
 .header__menu li:last-child a {
@@ -190,6 +258,150 @@ a.blue:hover {
 .banner {
   background-image: url("./../../assets/images/jpg/employee.jpg");
   height: 100vh;
+  padding: 85px;
+}
+.banner h1 {
+  max-width: 661px;
+  font-size: 70px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 80px;
+}
+.banner__test {
+  margin-bottom: 20px;
+}
+
+.test-your-iq {
+  min-height: 610px;
+}
+.test-your-iq__text {
+  gap: 40px;
+  max-width: 400px;
+  margin-right: 30px;
+}
+.test-your-iq h2 {
+  padding-bottom: 30px;
+  font-size: 45px;
+  font-weight: 500;
+  color: #000;
+}
+.test-your-iq__img {
+  margin-right: 15px;
+}
+.test-your-iq__clasification {
+  gap: 30px;
+}
+.test-your-iq__clasification-content :last-child {
+  border-bottom: none;
+}
+.test-your-iq__clasification-data {
+  gap: 21px;
+  margin-bottom: 13px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.test-your-iq h3 {
+  font-weight: 600;
+  color: #000;
+}
+.test-your-iq__clasification-upper {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+}
+.test-your-iq__clasification-numbers {
+  font-weight: 500;
+}
+.test-your-iq__clasification-text {
+  font-size: 16px;
+}
+
+.how {
+  min-height: 800px;
+  background-color: #F4F4FA;
+}
+.how__column {
+  gap: 40px;
+}
+.how__title-text {
+  margin-bottom: 90px;
+  font-size: 45px;
+  font-weight: 500;
+  color: #000;
+}
+.how__column-get-ready {
+  width: 360px;
+  padding: 36px 65px 45px 30px;
+  background-color: #fff;
+  border-radius: 5px 100px 5px 5px;
+}
+.how__column-test {
+  width: 360px;
+  padding: 36px 65px 45px 30px;
+  background-color: #fff;
+  border-radius: 5px 100px 5px 5px;
+}
+.how__column-certificate {
+  width: 360px;
+  padding: 36px 65px 45px 30px;
+  background-color: #fff;
+  border-radius: 5px 100px 5px 5px;
+}
+.how__column-get-ready-img-vector {
+  padding: 16px 19px;
+  background-color: rgba(46, 172, 243, 0.5);
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.how__column-test-img-list {
+  padding: 16px 19px;
+  background-color: rgba(66, 51, 244, 0.5);
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.how__column-certificate-img-checkbox {
+  padding: 16px 19px;
+  background-color: rgba(60, 210, 220, 0.5);
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.how a {
+  padding-right: 10px;
+  margin-bottom: 15px;
+}
+.how__checkbox-test {
+  margin-top: 80px;
+  gap: 60px;
+  height: 30px;
+}
+.how h3 {
+  font-weight: 600;
+  font-size: 600;
+  color: #000;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer__text p {
+  color: #909090;
+  font-size: 12px;
+  width: 360px;
+}
+.footer__instagram-logo {
+  justify-content: end;
+}
+.footer__menu ul {
+  list-style: none;
+  gap: 40px;
+}
+.footer__contacts ul {
+  list-style: none;
+}
+.footer a {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

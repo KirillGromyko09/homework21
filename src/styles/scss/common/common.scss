@@ -1,8 +1,11 @@
 
 body {
+  position: relative;
+
   font-family: $main-font-family,sans-serif;
   font-size: $font-md;
   font-weight: $font-regular;
+  line-height: 1.2;
   color: $main-font-color;
 }
 
@@ -17,6 +20,10 @@ body {
   display: flex;
 }
 
+.d-inline-block {
+  display: inline-block;
+}
+
 .justify-content-center{
   justify-content: center;
 }
@@ -25,21 +32,68 @@ body {
   justify-content: space-between;
 }
 
+.justify-content-end {
+  justify-content: end;
+}
+
+
 .align-items-center{
   align-items: center;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 a {
   @extend %default-transition;
+
+  display: inline-block;
+  text-decoration: none;
+
    &.default:hover {
      color: $accent-color;
 
    }
+
   &.blue {
     color: $accent-color;
+
     &:hover {
       color: $additional2-font-color;
     }
   }
-  text-decoration: none;
+
+  &.purple{
+    color: #4233F4;
+
+    &:hover {
+      color: $additional2-font-color;
+    }
+  }
+
+  &.blue-sky {
+    color: #2CCBD6;
+
+    &:hover {
+      color: $additional2-font-color;
+    }
+  }
+}
+
+.btn {
+  width: 250px;
+  padding: 14px 61px;
+
+  color: $additional-font-color;
+
+  background-color: $accent-color;
+  border: 2px solid $accent-color;
+  border-radius: $default-border-radius $big-border-radius;
+
+  &:hover {
+    background-color: $main-font-color;
+    border-color: $additional-font-color;
+  }
+
 }
