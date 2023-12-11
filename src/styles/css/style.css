@@ -262,10 +262,10 @@ a.blue-sky:hover {
 }
 .banner h1 {
   max-width: 661px;
-  font-size: 70px;
-  color: #fff;
-  font-weight: 500;
   margin-bottom: 80px;
+  font-size: 70px;
+  font-weight: 500;
+  color: #fff;
 }
 .banner__test {
   margin-bottom: 20px;
@@ -348,35 +348,35 @@ a.blue-sky:hover {
   border-radius: 5px 100px 5px 5px;
 }
 .how__column-get-ready-img-vector {
+  margin-bottom: 30px;
   padding: 16px 19px;
   background-color: rgba(46, 172, 243, 0.5);
   border-radius: 5px;
-  margin-bottom: 30px;
 }
 .how__column-test-img-list {
+  margin-bottom: 30px;
   padding: 16px 19px;
   background-color: rgba(66, 51, 244, 0.5);
   border-radius: 5px;
-  margin-bottom: 30px;
 }
 .how__column-certificate-img-checkbox {
+  margin-bottom: 30px;
   padding: 16px 19px;
   background-color: rgba(60, 210, 220, 0.5);
   border-radius: 5px;
-  margin-bottom: 30px;
 }
 .how a {
-  padding-right: 10px;
   margin-bottom: 15px;
+  padding-right: 10px;
 }
 .how__checkbox-test {
-  margin-top: 80px;
   gap: 60px;
   height: 30px;
+  margin-top: 80px;
 }
 .how h3 {
-  font-weight: 600;
   font-size: 600;
+  font-weight: 600;
   color: #000;
 }
 

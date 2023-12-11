@@ -1,22 +1,26 @@
 .banner {
-  @include bg-image('./../../assets/images/jpg/employee.jpg');
   @extend %terms;
+
+  @include bg-image('./../../assets/images/jpg/employee.jpg');
+
   height: 100vh;
   padding: $header-height;
 
   .container {
     @extend %height100;
   }
+
   &__content {
     @extend %height100;
   }
 
   h1 {
     max-width: 661px;
-    font-size: $font-xxl;
-    color: $additional-font-color;
-    font-weight: $font-medium;
     margin-bottom: 80px;
+
+    font-size: $font-xxl;
+    font-weight: $font-medium;
+    color: $additional-font-color;
   }
 
   &__test {
