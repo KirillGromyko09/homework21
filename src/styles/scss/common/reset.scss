@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "utf-8";
 
 /* Указываем box sizing */
 *,
@@ -11,6 +11,7 @@
 ul[class],
 ol[class] {
   padding: 0;
+  text-decoration: none;
 }
 
 /* Убираем внешние отступы */
@@ -33,14 +34,14 @@ dd {
 
 /* Выставляем основные настройки по-умолчанию для body */
 body {
-  scroll-behavior: smooth;
   min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
   line-height: 1.5;
-  text-rendering: optimizespeed;
 }
 
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class */
-ul [class],
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
 ol[class] {
   list-style: none;
 }
@@ -52,11 +53,11 @@ a:not([class]) {
 
 /* Упрощаем работу с изображениями */
 img {
-  display: block;
   max-width: 100%;
+  display: block;
 }
 
-/* Указываем понятную периодичность в потоке данных у article */
+/* Указываем понятную периодичность в потоке данных у article*/
 article > * + * {
   margin-top: 1em;
 }
@@ -70,11 +71,11 @@ select {
 }
 
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-  }
-}
+/*@media (prefers-reduced-motion: reduce) {*/
+/*    * {*/
+/*        animation-duration: 0.01ms !important;*/
+/*        animation-iteration-count: 1 !important;*/
+/*        transition-duration: 0.01ms !important;*/
+/*        scroll-behavior: auto !important;*/
+/*    }*/
+/*}*/

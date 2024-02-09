@@ -4,7 +4,8 @@
   @include bg-image('./../../assets/images/jpg/employee.jpg');
 
   height: 100vh;
-  padding: $header-height;
+  min-height: $banner-min-height;
+  padding: $header-height 0;
 
   .container {
     @extend %height100;

@@ -1,31 +1,35 @@
-.footer {
-  background-color: $main-font-color;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  &__text{
-    p {
-      color: #909090;
-      font-size: $font-xs;
-      width: 360px;
-    }
-  }
+footer {
+  background-color: $color-dark-gray;
 
-  &__instagram-logo {
-    justify-content: end;
+  .footer {
+    padding: 105px 0;
 
-  }
-  &__menu{
-    ul {
-      list-style: none;
-      gap: 40px;
+    &__left {
+      max-width: 363px;
     }
-  }
-  &__contacts {
-    ul {
-      list-style: none;
+
+    &__description {
+      @include text-base(12px);
+      color: $color-light;
+      padding-top: 30px;
     }
-  }
-  a {
-    color: $additional-font-color;
+
+    &__right {
+      gap:30px;
+
+      &-content {
+        justify-content: flex-start;
+        gap:30px;
+      }
+
+      p {
+        color: #909090;
+        padding-bottom: 10px;
+      }
+    }
+
+    .link-instagram {
+      padding-top: 10px;
+    }
   }
 }

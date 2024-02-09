@@ -1,5 +1,6 @@
 .test-your-iq {
-  min-height: 610px;
+  padding: 140px 0 100px 0;
+
 
   &__text {
     gap: 40px;
@@ -38,14 +39,17 @@
     font-weight: $font-lg;
     color: $additional2-font-color;
   }
+
   &__clasification-upper {
-    color: $additional2-font-color;
     font-size: $font-custom;
     font-weight: $font-regular;
+    color: $additional2-font-color;
   }
+
   &__clasification-numbers {
     font-weight: $font-medium;
   }
+
   &__clasification-text {
     font-size: $font-custom;
   }

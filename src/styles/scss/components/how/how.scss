@@ -1,15 +1,18 @@
 .how {
   @extend %term;
 
-  min-height: 800px;
+  padding: 130px 0 150px 0;
   background-color:#F4F4FA; ;
 
   &__column{
     gap: 40px;
+    margin-bottom: 80px;
+  }
+  &__title{
+    margin-bottom: 90px;
   }
 
   &__title-text {
-    margin-bottom: 90px;
     font-size: $font-xl;
     font-weight: $font-medium;
     color: $additional2-font-color;
@@ -68,7 +71,6 @@
   &__checkbox-test{
     gap: 60px;
     height: 30px;
-    margin-top: 80px;
 
   }
 

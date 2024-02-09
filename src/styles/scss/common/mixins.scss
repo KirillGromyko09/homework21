@@ -3,3 +3,9 @@
 
   background-image: url($img-url);
 }
+
+@mixin text-base($font-size) {
+  @extend %text-main;
+
+  font-size: $font-size;
+}
